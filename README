@@ -7,7 +7,7 @@ Local javascript is used when ActionController::Base.consider_all_requests_local
 Example
 =======
 
-<%= javascript_include_tag 'prototype', 'effects', 'controls' %>
+<%= javascript_include_tag 'prototype', 'effects' %>
 
 Expands to:
 
