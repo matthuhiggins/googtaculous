@@ -11,8 +11,8 @@ Example
 
 Expands to:
 
-<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.1/effects.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/effects.js" type="text/javascript"></script>
 
 
 Additionally,
@@ -21,10 +21,10 @@ Additionally,
 
 expands to 
 
-<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.2/prototype.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.1/effects.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.1/dragdrop.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.1/controls.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/effects.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/dragdrop.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.2/controls.js" type="text/javascript"></script>
 <script src="/javascripts/application.js?1213130636" type="text/javascript"></script>
 
 

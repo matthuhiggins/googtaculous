@@ -1,7 +1,9 @@
 module StrictlyUntyped
-  module Googtaculous    
+  module Googtaculous
     def self.included(base)
-      base.send(:alias_method_chain, :path_to_javascript, :google) unless ActionController::Base.consider_all_requests_local
+      base.class_eval do
+        alias_method_chain(:path_to_javascript, :google) unless ActionController::Base.consider_all_requests_local
+      end
     end
 
     def path_to_javascript_with_google(source)
@@ -10,10 +12,10 @@ module StrictlyUntyped
 
     private
       GOOGLE_PATHS = {
-        'prototype' => 'prototype/1.6.0.2/prototype.js',
-        'effects'   => 'scriptaculous/1.8.1/effects.js',
-        'dragdrop'  => 'scriptaculous/1.8.1/dragdrop.js',
-        'controls'  => 'scriptaculous/1.8.1/controls.js'
+        'prototype' => 'prototype/1.6.0.3/prototype.js',
+        'effects'   => 'scriptaculous/1.8.2/effects.js',
+        'dragdrop'  => 'scriptaculous/1.8.2/dragdrop.js',
+        'controls'  => 'scriptaculous/1.8.2/controls.js'
       }
 
       def google_path(source)
@@ -22,8 +24,9 @@ module StrictlyUntyped
         end
       end
 
+      GOOGLE_AJAX_LIB_ROOT = "ajax.googleapis.com/ajax/libs/".freeze
       def google_ajax_lib_root
-        "ajax.googleapis.com/ajax/libs/"
+        GOOGLE_AJAX_LIB_ROOT
       end
   end
 end
