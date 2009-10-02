@@ -23,6 +23,7 @@ class GoogtaculousTest < ActionView::TestCase
     assert_match /ajax.googleapis.com/, path_to_javascript('effects')
     assert_match /ajax.googleapis.com/, path_to_javascript('dragdrop')
     assert_match /ajax.googleapis.com/, path_to_javascript('controls')
+    assert_match /ajax.googleapis.com/, path_to_javascript('jquery')
   end
   
   def test_http_protocol_used_when_non_ssl_request
@@ -35,7 +36,7 @@ class GoogtaculousTest < ActionView::TestCase
     assert_match /^https:/, path_to_javascript('prototype')
   end
   
-  def test_w
+  def test_defaults
     @controller.request = RequestMock.new('http://')
     javascripts = javascript_include_tag(:defaults)
     %w(prototype effects dragdrop controls).each do |library|
