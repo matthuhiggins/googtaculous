@@ -12,7 +12,7 @@ module StrictlyUntyped
 
     private
       GOOGLE_PATHS = {
-        'prototype' => 'prototype/1.6.0.3/prototype.js',
+        'prototype' => 'prototype/1.6.1.0/prototype.js',
         'effects'   => 'scriptaculous/1.8.2/effects.js',
         'dragdrop'  => 'scriptaculous/1.8.2/dragdrop.js',
         'controls'  => 'scriptaculous/1.8.2/controls.js'
